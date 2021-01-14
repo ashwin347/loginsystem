@@ -16,6 +16,9 @@
     <button onclick=send(); value='signup'>SIGN UP</button>
     <script>
         function send(){
+            if(username=="" || password==""){
+                return 
+            }
             username=document.getElementById('username').value
             password=document.getElementById('password').value
             console.log(username,password)
