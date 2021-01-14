@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>hello</h1>
+    </body>
+    <div>
+        <h1 style=color:{{color}}>
+            {{data}}
+        </h1>
+    </div>
+    <form action='login'>
+        <input name='username' id='username' type='text' required>
+        <input name='password' id='password' type='password' required>
+        <button type="submit">LOGIN</button>
+    </form>
+    
+    <button onclick=send(); value='signup'>SIGN UP</button>
+    <script>
+        function send(){
+            username=document.getElementById('username').value
+            password=document.getElementById('password').value
+            console.log(username,password)
+            window.location.href='/signup?username='+username+"&password="+password;
+        }
+    </script>
+</html>
