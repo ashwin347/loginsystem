@@ -16,12 +16,12 @@
     <button onclick=send(); value='signup'>SIGN UP</button>
     <script>
         function send(){
+            
+            username=document.getElementById('username').value
+            password=document.getElementById('password').value
             if(username=="" || password==""){
                 return 
             }
-            username=document.getElementById('username').value
-            password=document.getElementById('password').value
-            console.log(username,password)
             window.location.href='/signup?username='+username+"&password="+password;
         }
     </script>
